@@ -1,0 +1,13 @@
+class  Animal:
+    def animal_attribute(self,):
+        print('i describe the species ')
+
+
+class Tiger(Animal):
+    def roar(self,):
+        print('whoooooooo')
+
+
+t = Tiger()
+t.animal_attribute()
+t.roar()

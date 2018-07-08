@@ -1,0 +1,21 @@
+class Shape:
+    def __init__(self,breadth,length):
+        self.breadth=breadth
+        self.length = length
+    def area(self):
+        return self.breadth * self.length
+    def getarea(self, area):
+        self.area = area
+class Rectangle(Shape):
+        def __init__(self, breadth, length):
+            self.breadth = breadth
+            self.length = length
+        def rectangle_area(self):
+            return self.length * self.breadth
+class Square(Shape):
+        def __init__(self, length):
+            self.length = length
+        def Square_area(self):
+            return self.length ** 2
+R1=Rectangle(10,20)
+print(R1.area())

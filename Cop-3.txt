@@ -1,0 +1,30 @@
+class cop:
+    def __init__(self,name,age,work,experience,designation):
+        self.name=name
+        self.age=age
+        self.work=work
+        self.experience=experience
+        self.designation=designation
+    def add(self,caste,years):
+        self.name=+"caste"
+        self.work=+years
+    def display(self):
+        print('name:{},age:{},work:{},exprience:{},designation:{}'.format(self.name,self.age,self.work,self.experience,self.designation))
+    def update(self,count):
+        self.experience=+count
+        if(self.experience>3):
+            self.designation ="Managing Director"
+
+        else:
+            self.designation="normal colliquge"
+        return self.designation
+class Mission(cop):
+
+    def mission_details(self):
+        self.MI6=cop.work+"save the world Ethan hunt"
+
+
+M1=Mission('Tom cruise','55','MI series','15','star performer')
+M1.display()
+M1.mission_details()
+
